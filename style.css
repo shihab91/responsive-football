@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* ================= style starts from here============== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*=================== style of header starts from here====================== */
+header {
+  background: #2d25a0;
+}
+.header_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 156px 80px 156px;
+  align-items: center;
+}
+
+.header_text > h1,
+a,
+.fas {
+  color: white;
+}
+.header_section h1 {
+  margin: 18px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  width: 485px;
+  height: 230px;
+}
+.header_text a {
+  background: #e02c6d;
+  padding: 10px 24px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header_text a .fas {
+  margin-left: 8px;
+}
+
+.header_img img {
+  height: 456px;
+  width: 556px;
+  transition: transform 0.5s;
+}
+.header_img:hover img {
+  transform: scale(1.1);
+}
+/*================================= style of header ends here========================== */
+
+/*================================= style of main section starts here=================== */
+.player_cards {
+  margin: 70px 190px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.player_card {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border: none;
+  width: 330px;
+  height: 456px;
+}
+.player_img:hover img {
+  transform: scale(1.09);
+  overflow: hidden;
+}
+.player_img img {
+  transition: transform 0.5s;
+
+  margin: 15px;
+  width: 300px;
+  height: 256px;
+}
+.player_info {
+  width: 300px;
+  height: 154px;
+}
+.player_info h3 {
+  margin: 0 15px 15px 15px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+}
+.player_info p {
+  margin-left: 15px;
+}
+/*================================= style of main section ends here=================== */
+
+/*================================= style of footer section starts here=================== */
+footer {
+  display: grid;
+  place-items: center;
+  margin: 50px 0 35px 0;
+}
+
+.footer_section {
+  display: flex;
+  flex-direction: column;
+}
+.logo img {
+  width: 483.87px;
+  height: 110px;
+}
+.social_icons {
+  text-align: center;
+}
+.social_icons img {
+  height: 32px;
+  width: 32px;
+  margin-right: 15px;
+}
+.copyright {
+  text-align: center;
+}
+/*================================= style of footer section ends here=================== */
+
+
+/*================================= media queries starts here=================== */
+
+@media screen and (max-width: 1440px) {
+  .player_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    max-width: 360px;
+  }
+  header {
+    width: 360px;
+    height: 690px;
+  }
+  .header_section {
+    padding: 0px;
+    flex-direction: column;
+  }
+  .header_section h1 {
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .header_img img {
+    width: 329px;
+    height: 259.17px;
+    margin-top: 50px;
+  }
+  .player_cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px;
+  }
+  .player_card {
+    width: 330px;
+    height: 474px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .logo img {
+    width: 271px;
+    height: 63px;
+    margin: 0;
+  }
+}
+
+/*================================= media queries ends here=================== */
